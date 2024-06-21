@@ -9,17 +9,28 @@
   ],
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build && npx cap sync",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/core": "latest",
+    "@capacitor/android": "^6.1.0",
     "@capacitor/camera": "latest",
-    "@capacitor/splash-screen": "latest"
+    "@capacitor/core": "latest",
+    "@capacitor/splash-screen": "latest",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",
-    "vite": "^2.9.13"
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.8.4",
+    "vite": "^4.4.9",
+    "vite-plugin-top-level-await": "^1.4.1",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "author": "",
   "license": "ISC"
