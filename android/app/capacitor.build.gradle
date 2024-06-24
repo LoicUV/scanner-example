@@ -12,6 +12,7 @@ dependencies {
     implementation project(':capacitor-mlkit-barcode-scanning')
     implementation project(':capacitor-camera')
     implementation project(':capacitor-splash-screen')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 }
 
